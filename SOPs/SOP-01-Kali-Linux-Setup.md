@@ -455,49 +455,10 @@ Kali Linux configured with required resources, CEH-Lab-Network connectivity, upd
 
 **Network note:** NAT Network allows lab VMs to communicate and may allow outbound internet access. It is not a fully isolated network. Use an Internal Network if a completely disconnected lab is required.
 
-## 16. Evidence and Screenshots
 
-Capture the following screenshots for GitHub documentation:
 
-| Screenshot | Evidence |
-|---|---|
-| 01 | Kali VM visible in VirtualBox |
-| 02 | Kali RAM and CPU configuration |
-| 03 | Kali virtual disk size |
-| 04 | Kali NAT Network configuration |
-| 05 | Kali desktop successfully started |
-| 06 | Successful package update |
-| 07 | Installed security tools |
-| 08 | `ip -br addr` output |
-| 09 | `ip route` output |
-| 10 | Successful gateway ping |
-| 11 | Successful internet and DNS connectivity tests |
-| 12 | Successful ping to Metasploitable 2 |
-| 13 | Metasploit version verification |
-| 14 | Completed snapshot |
 
-Suggested screenshot directory:
-
-```text
-Screenshots/
-└── Kali/
-    ├── 01-Kali-VM.png
-    ├── 02-System-Resources.png
-    ├── 03-Virtual-Disk.png
-    ├── 04-Network-Configuration.png
-    ├── 05-Kali-Desktop.png
-    ├── 06-System-Update.png
-    ├── 07-Security-Tools.png
-    ├── 08-IP-Address.png
-    ├── 09-Default-Route.png
-    ├── 10-Gateway-Ping.png
-    ├── 11-Internet-DNS-Test.png
-    ├── 12-Metasploitable-Connectivity.png
-    ├── 13-Metasploit-Version.png
-    └── 14-Completed-Snapshot.png
-```
-
-## 17. Final Verification Checklist
+## 16. Final Verification Checklist
 
 - [x] Kali Linux VM created/imported.
 - [x] RAM configured to 4 GB.
@@ -516,7 +477,7 @@ Screenshots/
 
 **Lab Status:** Kali Linux attacker machine configured and basic network connectivity verified.
 
-## 18. Conclusion
+## 17. Conclusion
 
 Kali Linux has been configured as the attacker machine in the CEH Practical Lab.
 
