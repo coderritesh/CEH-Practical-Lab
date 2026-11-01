@@ -373,7 +373,7 @@ Expected result: Replies from the gateway.
 Execute:
 
 ```cmd
-ping 192.168.56.3
+ping 192.168.56.x
 ```
 
 Expected result: Replies from Kali Linux if ICMP traffic is allowed.
@@ -383,7 +383,7 @@ Expected result: Replies from Kali Linux if ICMP traffic is allowed.
 Execute:
 
 ```cmd
-ping 192.168.56.4
+ping 192.168.56.x
 ```
 
 Expected result: Replies from Metasploitable 2 if ICMP traffic is allowed.
