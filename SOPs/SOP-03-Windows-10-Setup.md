@@ -63,27 +63,61 @@ Before starting, make sure you have:
 | Virtual Disk | `E:\cyberlab\Win10-Clientt\Win10-Clientt.vdi` |
 | Windows ISO | `E:\cyberlab\win10-Client\Windows.iso` |
 
-## 4. Prepare Windows 10 ISO
+## 4. Download and Prepare Windows 10 ISO
 
-### Step 1: Create the ISO Folder
+### Step 1: Open the Official Microsoft Website
 
-1. Open File Explorer on the host Windows machine.
-2. Open the `E:\cyberlab\` directory.
-3. Create a folder named `win10-Client`.
-4. Place the Windows 10 ISO inside this folder.
+1. Open a browser on the host Windows machine.
+2. Visit the official Microsoft Windows 10 download page:
 
-Expected location:
+   https://www.microsoft.com/software-download/windows10
+
+3. Locate the Windows 10 installation media download options.
+
+### Step 2: Download Windows 10 ISO
+
+1. Follow Microsoft's available download instructions.
+2. Select the Windows 10 ISO option if it is offered.
+3. Select the required language.
+4. Select the 64-bit download option.
+5. Wait for the ISO download to complete.
+
+**Important:** Windows 10 reached end of support on October 14, 2025. Use it only for this controlled lab environment, and understand that regular security updates are no longer provided.
+
+### Step 3: Create the ISO Folder
+
+1. Open File Explorer.
+2. Navigate to:
+
+   `E:\cyberlab\`
+
+3. Create a folder named:
+
+   `win10-Client`
+
+4. Move the downloaded ISO into this folder.
+
+Expected file location:
 
 ```text
 E:\cyberlab\win10-Client\Windows.iso
 ```
 
-### Step 2: Verify the ISO
+### Step 4: Verify the Downloaded ISO
 
-1. Open the folder.
-2. Confirm that `Windows.iso` is present.
-3. Check that the file size is reasonable for Windows installation media.
-4. Make sure the file is accessible.
+1. Open PowerShell.
+2. Execute:
+
+```powershell
+Get-FileHash "E:\cyberlab\win10-Client\Windows.iso" -Algorithm SHA256
+```
+
+3. Confirm that PowerShell displays a SHA256 hash.
+4. If Microsoft provides a matching checksum for the exact ISO, compare the values.
+
+A generated hash alone does not prove that the ISO is authentic; it must be compared with a trusted published checksum.
+
+Expected result: The ISO file is present, readable, and ready to be mounted in VirtualBox.
 
 ## 5. Create Windows 10 Virtual Machine
 
